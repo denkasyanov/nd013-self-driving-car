@@ -1,0 +1,2 @@
+model_checkpoint_path: "arch"
+all_model_checkpoint_paths: "arch"
