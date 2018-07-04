@@ -18,12 +18,12 @@ Challenge - https://youtu.be/U8C0otDC1F8
 ### Project 2: Traffic Sign Classification
 ![Finding Lane Lines on the Road](p2_traffic_sign_classifier/preview.png)  
 #### Problem
-
+Classification of traffic signs
 #### Solution
-
-#### Demo
-
+After some initial exploration of the dataset I augmented it by rotating images. I didn't convert to grayscale to keep color data. Not only it increased the size of training data, but also in real life traffic signs can be observed at some angle depending on relative position of the car and signs. LeNet architecture worked pretty well on augmented data. I only had to modify input and output dimensions to fit dataset. Then the model was tested on traffic signs found on the internet.
+#### Dataset
+http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset
 #### Source code
-
+[p2_traffic_sign_classifier](p2_traffic_sign_classifier)
 #### Keywords
-`Tensorflow`, `Python`
+`TensorFlow`, `Deep Learning`, `LeNet`
