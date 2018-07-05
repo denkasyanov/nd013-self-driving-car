@@ -5,7 +5,7 @@ This repository contains solutions for projects of [Udacity Self-Driving Car Eng
 #### Problem
 Detection of lane lines on a video
 #### Solution
-Using [Canny edge detector](https://en.wikipedia.org/wiki/Canny_edge_detector) and [Hough transform](https://en.wikipedia.org/wiki/Hough_transform) implementations from [OpenCV](https://opencv.org/) I extracted candidate lane lines from individual frames based on level of confidence and assumptions about spatial characteristics (position, angle and length). The final lane lines **in the individual frame** are weighted averages of the frame's candidate lines (longer candidates have larger weights). Resulting lane lines **on the video** are averages of the final lane lines from current and several previous individual frames. All variables were manually tuned  
+Using [Canny edge detector](https://en.wikipedia.org/wiki/Canny_edge_detector) and [Hough transform](https://en.wikipedia.org/wiki/Hough_transform) implementations from [OpenCV](https://opencv.org/) I extracted candidate lane lines from individual frames based on level of confidence and assumptions about spatial characteristics (position, angle and length). The final lane lines **in the individual frame** were weighted averages of the frame's candidate lines (longer candidates had larger weights). Resulting lane lines **on the video** were averages of the final lane lines from current and several previous individual frames. All variables were manually tuned  
 #### Demo
 Simple Case - https://youtu.be/En4_FAs5c-s  
 More Advanced Case - https://youtu.be/5emFX8R4zpA  
@@ -16,14 +16,37 @@ Challenge - https://youtu.be/U8C0otDC1F8
 `Python`, `Computer Vision`, `OpenCV`
 
 ### Project 2: Traffic Sign Classification
-![Finding Lane Lines on the Road](p2_traffic_sign_classifier/preview.png)  
+![Traffic Sign Classification](p2_traffic_sign_classifier/preview.png)  
 #### Problem
 Classification of traffic signs
 #### Solution
-After some initial exploration of the dataset I augmented it by rotating images. I didn't convert to grayscale to keep color data. Not only it increased the size of training data, but also in real life traffic signs can be observed at some angle depending on relative position of the car and signs. LeNet architecture worked pretty well on augmented data. I only had to modify input and output dimensions to fit dataset. Then the model was tested on traffic signs found on the internet.
+After some initial exploration of the dataset I augmented it by rotating images. I didn't convert to grayscale to keep color data. Not only it increased the size of training data, but also in real life traffic signs can be observed at some angle depending on relative position of the car and signs. LeNet architecture worked pretty well on augmented data. I only had to modify input and output dimensions to fit dataset. Then the model was tested on traffic signs found on the internet
 #### Dataset
 http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset
 #### Source code
 [p2_traffic_sign_classifier](p2_traffic_sign_classifier)
 #### Keywords
 `TensorFlow`, `Deep Learning`, `LeNet`
+
+### Project 3: Behavioral Cloning
+![Behavioral Cloning](p3_behavioral_cloning/preview.gif)  
+#### Problem
+Cloning of the behavior of the car manually driven around the track in [Udacity simulator](https://github.com/udacity/self-driving-car-sim)  
+Simulator provides two modes: training and autonomous driving. The first mode allows to drive manually in order simulate different road situations that will be used during model training. The other mode allows to simulate driving of the trained agent.
+#### Solution
+Using training data provided by Udacity for training I trained a model based on architecture from [paper "End to End Learning for Self-Driving Cars" by NVIDIA](https://arxiv.org/pdf/1604.07316v1.pdf).  
+Having decent training data was the key here. Some ideas on designing training data:
+
+- It should include not only "proper" driving along the center of the track, but also recovering from driving out of the road so that trained agent can correct its behavior in similar situations
+- Data augmentation can be received virtually for free by including images from side cameras with modified angle (of course, if they are available). For example, an image from the right camera would have corresponding steering angle slightly corrected to the left hand side as if the car recovers from the driving out of the right side of the road
+- Mirroring images and corresponding steering angles doubled the training dataset for free and decreases overfitting (because the track is a ring)
+- Cropping irrelevant areas of the input image to focus only on the road
+
+One of the most important things was to decrease amount of samples with ~0° steering angle because during normal driving it was the most common situation and it overwhelmed samples with non-zero steering angle, so the agent learned to drive straight
+
+#### Demo
+https://www.youtube.com/watch?v=6txXwArfLRY
+#### Source code
+[p3_behavioral_cloning](p3_behavioral_cloning)
+#### Keywords
+`Keras`, `Data Augmentation`
