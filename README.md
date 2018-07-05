@@ -41,6 +41,7 @@ Having decent training data was the key here. Some ideas on designing training d
 - Mirroring images and corresponding steering angles doubled the training dataset for free and decreases overfitting (because the track is a ring)
 - Cropping irrelevant areas of the input image to focus only on the road
 - One of the most important things was to decrease amount of samples with ~0° steering angle because during normal driving it was the most common situation and it overwhelmed samples with non-zero steering angle, so the agent learned to drive straight
+
 #### Demo
 https://www.youtube.com/watch?v=6txXwArfLRY
 #### Source code
@@ -60,3 +61,19 @@ https://youtu.be/U-7ratRKlTU
 [p4_advanced_lane_finding](p4_advanced_lane_finding)
 #### Keywords
 `OpenCV`, `Sobel Operator`, `Camera Calibration`
+
+### Project 5: Vehicle Detection and Tracking
+![Vehicle Detection and Tracking](p5_vehicle_detection_and_tracking/preview.gif)  
+#### Problem
+Identification and tracking vehicles moving in the same direction in a video from a front-facing camera on a car
+#### Solution
+Using sliding windows approach and [HOG](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) I generated a heatmap of possible vehicle detections for each frame. For detection of a car in a window I trained Support Vector Classifier on data from [GTI Vehicle Image Database](http://www.gti.ssr.upm.es/data/Vehicle_database.html) and [KITTI Vision Benchmark Suite](http://www.cvlibs.net/datasets/kitti/). Then I filtered out detections that got less votes (dim detections on the heatmap) as probable false detections
+#### Dataset
+http://www.gti.ssr.upm.es/data/Vehicle_database.html  
+http://www.cvlibs.net/datasets/kitti/
+#### Demo
+https://youtu.be/XUi7b76nXJU
+#### Source code
+[p5_vehicle_detection_and_tracking](p5_vehicle_detection_and_tracking)
+#### Keywords
+`Computer Vision`, `Support Vector Classifier`, `Histogram of Oriented Gradients`, `Sliding Windows`
