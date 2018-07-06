@@ -77,3 +77,16 @@ https://youtu.be/XUi7b76nXJU
 [p5_vehicle_detection_and_tracking](p5_vehicle_detection_and_tracking)
 #### Keywords
 `Computer Vision`, `Support Vector Classifier`, `Histogram of Oriented Gradients`, `Sliding Windows`
+
+### Project 6: Extended Kalman Filters
+![Extended Kalman Filters](p6_extended_kalman_filters/preview.gif)  
+#### Problem
+[Simultaneous localization and mapping (SLAM)](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)
+#### Solution
+In this project, goals were to get familiar with C++ and implement Extended Kalman Filter using it. Based on simulated measurements of object moving around a vehicle I used Extended Kalman Filter to track the object's position.
+#### Demo
+https://youtu.be/36X1QxnA8m0
+#### Source code
+[p6_extended_kalman_filters](p6_extended_kalman_filters)
+#### Keywords
+`C++`, `Simultaneous Localization and Mapping (SLAM)`, `Extended Kalman Filter`
