@@ -116,3 +116,16 @@ https://youtu.be/yaXsVJz2x7U
 [p8_kidnapped_vehicle](p8_kidnapped_vehicle)
 #### Keywords
 `Particle Filter`, `C++`
+
+### Project 9: PID Controller
+![PID Controller](p9_pid_contoller/preview.gif)  
+#### Problem
+Controlling a vehicle based on Cross Track Error (CTE) provided by simulator
+#### Solution
+To control the vehicle based on CTE I implemented [PID Contoller](https://en.wikipedia.org/wiki/PID_controller). Parameters have been tuned manually by visually inspecting changes in simulator
+#### Demo
+https://youtu.be/7WDHRkwCG6o
+#### Source code
+[p9_pid_contoller](p9_pid_contoller)
+#### Keywords
+`PID Controller`, `C++`
