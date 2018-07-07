@@ -1,5 +1,6 @@
 # Self-Driving Car Engineer Nanodegree
-This repository contains solutions for projects of [Udacity Self-Driving Car Engineer Nanodegree](https://udacity.com/course/self-driving-car-engineer-nanodegree--nd013)
+This repository contains solutions for projects of [Udacity Self-Driving Car Engineer Nanodegree](https://udacity.com/course/self-driving-car-engineer-nanodegree--nd013)  
+Demo playlist with all projects (except P2) https://www.youtube.com/playlist?list=PL2jvBN6kdzT6ex5pwg4tLS7098rBFS4xl
 ### Project 1: Finding Lane Lines on the Road
 ![Finding Lane Lines on the Road](p1_lane_finding/preview.gif)  
 #### Problem
