@@ -122,10 +122,22 @@ https://youtu.be/yaXsVJz2x7U
 #### Problem
 Controlling a vehicle based on Cross Track Error (CTE) provided by simulator
 #### Solution
-To control the vehicle based on CTE I implemented [PID Contoller](https://en.wikipedia.org/wiki/PID_controller). Parameters have been tuned manually by visually inspecting changes in simulator
+To control the vehicle based on CTE I implemented [PID Controller](https://en.wikipedia.org/wiki/PID_controller). Parameters have been tuned manually by visually inspecting changes in simulator
 #### Demo
 https://youtu.be/7WDHRkwCG6o
 #### Source code
 [p9_pid_contoller](p9_pid_contoller)
 #### Keywords
 `PID Controller`, `C++`
+
+### Project 10: Model Predictive Control
+![Model Predictive Control](p10_mpc/preview.gif)  
+#### Problem
+Controlling a vehicle based on position, orientation, steering angle, throttle and speed of a vehicle and an array of waypoints
+#### Solution
+#### Demo
+https://youtu.be/JCTsv9wvVk4
+#### Source code
+[p10_mpc](p10_mpc)
+#### Keywords
+`Model Predictive Control`, `C++`
