@@ -102,4 +102,17 @@ https://youtu.be/bSmcUqRlyD0
 #### Source code
 [p7_unscented_kalman_filters](p7_unscented_kalman_filters)
 #### Keywords
-`Unscented Kalman Filter`, `Constant Turn Rate and Velocity model (CTRV)`
+`Unscented Kalman Filter`, `Constant Turn Rate and Velocity model (CTRV)`, `C++`
+
+### Project 8: Kidnapped Vehicle
+![Kidnapped Vehicle](p8_kidnapped_vehicle/preview.gif)  
+#### Problem
+Localization of a vehicle based on noisy estimate of initial position and noisy sensor and control data
+#### Solution
+To localize a vehicle, I implemented [Particle Filter](https://en.wikipedia.org/wiki/Particle_filter)
+#### Demo
+https://youtu.be/yaXsVJz2x7U
+#### Source code
+[p8_kidnapped_vehicle](p8_kidnapped_vehicle)
+#### Keywords
+`Particle Filter`, `C++`
