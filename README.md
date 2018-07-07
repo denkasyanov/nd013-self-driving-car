@@ -81,7 +81,7 @@ https://youtu.be/XUi7b76nXJU
 ### Project 6: Extended Kalman Filters
 ![Extended Kalman Filters](p6_extended_kalman_filters/preview.gif)  
 #### Problem
-[Simultaneous localization and mapping (SLAM)](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)
+Tracking a moving object using simulated radar and lidar data
 #### Solution
 In this project, goals were to get familiar with C++ and implement Extended Kalman Filter using it. Based on simulated measurements of object moving around a vehicle I used Extended Kalman Filter to track the object's position.
 #### Demo
@@ -89,7 +89,7 @@ https://youtu.be/36X1QxnA8m0
 #### Source code
 [p6_extended_kalman_filters](p6_extended_kalman_filters)
 #### Keywords
-`C++`, `Simultaneous Localization and Mapping (SLAM)`, `Extended Kalman Filter`
+`C++`, `Extended Kalman Filter`, `Constant Velocity model (CV)`
 
 ### Project 7: Unscented Kalman Filters
 ![Unscented Kalman Filters](p7_unscented_kalman_filters/preview.gif)  
@@ -102,4 +102,4 @@ https://youtu.be/bSmcUqRlyD0
 #### Source code
 [p7_unscented_kalman_filters](p7_unscented_kalman_filters)
 #### Keywords
-`Unscented Kalman Filter`, `Constant Turn Rate and Velocity model (CTRV)`, `Simultaneous Localization and Mapping (SLAM)`
+`Unscented Kalman Filter`, `Constant Turn Rate and Velocity model (CTRV)`
