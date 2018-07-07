@@ -90,3 +90,16 @@ https://youtu.be/36X1QxnA8m0
 [p6_extended_kalman_filters](p6_extended_kalman_filters)
 #### Keywords
 `C++`, `Simultaneous Localization and Mapping (SLAM)`, `Extended Kalman Filter`
+
+### Project 7: Unscented Kalman Filters
+![Unscented Kalman Filters](p7_unscented_kalman_filters/preview.gif)  
+#### Problem
+Improvement of tracking a nonlinearily moving object using Unscented Kalman Filter
+#### Solution
+Solution in the last project assumed that the tracked object kept going straight (Constant Velocity model). Because of that when the object turned, its estimated position tended to result outside of the actually driven circle. In this project, I implemented Unscented Kalman Filter using Constant Turn Rate and Velocity model (CTRV) to track nonlinearily moving object
+#### Demo
+https://youtu.be/bSmcUqRlyD0
+#### Source code
+[p7_unscented_kalman_filters](p7_unscented_kalman_filters)
+#### Keywords
+`Unscented Kalman Filter`, `Constant Turn Rate and Velocity model (CTRV)`, `Simultaneous Localization and Mapping (SLAM)`
