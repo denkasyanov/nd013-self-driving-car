@@ -129,16 +129,17 @@ https://youtu.be/7WDHRkwCG6o
 #### Source code
 [p9_pid_contoller](p9_pid_contoller)
 #### Keywords
-`PID Controller`, `C++`
+`PID Controller`, `Motion Planning`, `C++`
 
 ### Project 10: Model Predictive Control
 ![Model Predictive Control](p10_mpc/preview.gif)  
 #### Problem
 Controlling a vehicle based on position, orientation, steering angle, throttle and speed of a vehicle and an array of waypoints
 #### Solution
+To control the vehicle so that it traveled along the provided waypoints I implemented [Model Predictive Control](https://en.wikipedia.org/wiki/Model_predictive_control). Visualizations of reference path (yellow line) and MPC trajectory path (green line) were added for debug and demonstration purposes. Details of the solution are in [projects's folder](p10_mpc)
 #### Demo
 https://youtu.be/JCTsv9wvVk4
 #### Source code
 [p10_mpc](p10_mpc)
 #### Keywords
-`Model Predictive Control`, `C++`
+`Model Predictive Control`, `Motion Planning`, `C++`
